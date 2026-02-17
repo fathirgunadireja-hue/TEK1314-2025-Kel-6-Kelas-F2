@@ -25,26 +25,30 @@ Lab ini menggunakan arsitektur tiga sistem dengan konfigurasi sebagai berikut:
 
 | Hostname | IP Address | OS | Role |
 |----------|------------|-----|------|
-| Ubuntu Cybersecurity Workstation | 192.168.26.xx | Ubuntu | Attacker Machine |
-| Ubuntu Server | 192.168.26.xx | Ubuntu Server | Target Server |
-| Security Onion | 192.168.26.xx | Security Onion | Monitoring/SIEM |
+| Ubuntu Cybersecurity Workstation | 192.168.26.10 | Ubuntu | Attacker Machine |
+| Ubuntu Server | 192.168.26.20 | Ubuntu Server | Target Server |
+| Security Onion | 192.168.26.30 | Security Onion | Monitoring/SIEM |
 
 #### 1. Attacker Machine
 - **VM Name**: Ubuntu Cybersecurity Workstation
-- **IP Address**: 192.168.26.xx
+- **IP Address**: 192.168.26.10
 - **Tools**: Hydra
+- **Target Port**: 22 (SSH)
+- **Attack Type**: Brute Force & Dictionary Attack
 - **Function**: Melakukan serangan brute force terhadap target SSH
 
 #### 2. Target Server
 - **VM Name**: Ubuntu Server
-- **IP Address**: 192.168.26.xx
+- **IP Address**: 192.168.26.20
 - **Service**: OpenSSH Server
 - **Port**: 22
 - **Function**: Server target yang akan diserang
 
 #### 3. Monitoring Server (SIEM)
 - **VM Name**: Security Onion
-- **IP Address**: 192.168.26.xx
+- **IP Address**: 192.168.26.30
+- **Management Ports**: 22 (SSH), 443 (HTTPS Web Interface)
+- **Monitoring Mode**: Passive Network Capture
 - **Function**: 
   - Network Traffic Analysis
   - Brute Force Detection
