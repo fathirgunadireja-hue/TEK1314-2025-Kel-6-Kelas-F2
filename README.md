@@ -55,6 +55,21 @@ Lab ini menggunakan arsitektur tiga sistem dengan konfigurasi sebagai berikut:
   - Alert Generation
   - Log Monitoring
 
-## Dokumentasi
+## Struktur Repository
 
-- [IP Address Planning](docs/design/ip_plan.md)
+```
+TEK1314-2025-Kel-6-Kelas-F2/
+├── docs/
+│   ├── phase-1-baseline/          # Fase 1: Hardening & Baseline
+│   │   ├── baseline-report.md     # Laporan utama Phase 1
+│   │   ├── assets/                # Screenshot & bukti visual
+│   │   └── README.md
+│   ├── phase-2-va/                # Fase 2: Vulnerability Assessment
+│   └── phase-3-incident/          # Fase 3: Incident Response
+├── scripts/                       # Scripts untuk automation
+├── documentation/                 # Dokumentasi legacy (design, etc)
+├── Evidence-Logs/                 # Log dan bukti (legacy)
+├── Reports/                       # Reports (legacy)
+├── LOGBOOK.md                     # Logbook aktivitas mingguan
+└── README.md                      # File ini
+```
