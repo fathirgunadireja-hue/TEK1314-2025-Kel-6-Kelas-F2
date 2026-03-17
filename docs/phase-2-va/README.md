@@ -9,7 +9,7 @@ Folder ini akan berisi dokumentasi untuk fase Vulnerability Assessment.
 - Prioritas remediasi
 
 ## Status
-📝 **Belum dimulai** - Akan dikerjakan setelah Phase 1 selesai
+**Belum dimulai** - Akan dikerjakan setelah Phase 1 selesai
 
 ## Dokumen yang Diperlukan:
 - `va-report.md` - Laporan utama vulnerability assessment
