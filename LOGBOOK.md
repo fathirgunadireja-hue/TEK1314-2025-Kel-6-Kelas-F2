@@ -1,9 +1,10 @@
 # Logbook Proyek PBL Keamanan Siber - Kelompok [6]
 **Skenario:** [Remote Access Security Management Server]
 **Anggota:**
-1. [Nama] - Lead Analyst
-2. [Nama] - Security Engineer
-3. [Nama] - Analyst
+1. [Fathir Gunadireja] - Lead Analyst
+2. [Hadayani Alya] - Security Engineer
+3. [Jeremia AP] - Analyst
+4. [Kinanti Ananda Putri] - Analyst
 ---
 ## Log Aktivitas Mingguan
 ### Minggu 1-3: Fase Setup
