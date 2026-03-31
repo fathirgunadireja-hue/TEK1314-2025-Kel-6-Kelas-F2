@@ -14,7 +14,7 @@
 ### Minggu 4-7: Fase Hardening & Baseline
 - **Target:** Konfigurasi IP, Konfigurasi Firewall dan SSH, test ping dan logging verification.
 - **Update [10-19 Maret 2026]:**
- - Melakukan konfigurasi Firewall di Windows VM.
+ - Melakukan konfigurasi Firewall Server Target.
  - Konfigurasi IP dan test Ping di setiap VM.
  - Melakukan Logging Verification dengan memeriksa log di Security Onion untuk memastikan semua aktivitas terekam dengan baik.
  - Status: **Fase 1 Selesai.**
