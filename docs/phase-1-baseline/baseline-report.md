@@ -2,11 +2,11 @@
 
 ## Informasi Umum
 
-- **Proyek**: TEK1314-2025-Kel-6-Kelas-F2
-- **Mata Kuliah**: Keamanan Siber
-- **Skenario**: Remote Access Security Management Server
-- **Periode Pelaksanaan**: Minggu 4-7 (10-19 Maret 2026)
-- **Status**: Selesai
+- Proyek: TEK1314-2025-Kel-6-Kelas-F2
+- Mata Kuliah: Keamanan Siber
+- Skenario: Remote Access Security Management Server
+- Periode Pelaksanaan: Minggu 4-7 (10-19 Maret 2026)
+- Status: Selesai
 
 ## Tujuan Phase 1
 
@@ -22,10 +22,10 @@ Phase 1 bertujuan membangun baseline lingkungan lab yang stabil dan aman sebelum
 
 ### Konfigurasi Jaringan
 
-- **Network Type**: Host-Only Adapter
-- **Subnet**: 192.168.26.0/24
-- **Subnet Mask**: 255.255.255.0
-- **Environment**: Isolated Cybersecurity Lab
+- Network Type: Host-Only Adapter
+- Subnet: 192.168.26.0/24
+- Subnet Mask: 255.255.255.0
+- Environment: Isolated Cybersecurity Lab
 
 ### Tabel Host dan Peran
 
@@ -43,9 +43,9 @@ Phase 1 bertujuan membangun baseline lingkungan lab yang stabil dan aman sebelum
 - Melakukan instalasi dan aktivasi Security Onion sebagai monitoring server.
 - Memastikan mode monitoring mendukung kebutuhan capture traffic lab.
 
-**Evidence:**
+Evidence:
 - ![Topologi Lab](assets/01-topology.png)
-- ![Instalasi Security Onion](assets/02- instalasi security onion.png)
+- ![Instalasi Security Onion](<assets/02- instalasi security onion.png>)
 
 ### 2) System Hardening (Target Server)
 
@@ -53,28 +53,28 @@ Phase 1 bertujuan membangun baseline lingkungan lab yang stabil dan aman sebelum
 - Melakukan konfigurasi firewall untuk membatasi akses hanya pada layanan yang diperlukan.
 - Menjaga layanan SSH (port 22) tetap aktif untuk kebutuhan skenario brute force pada fase berikutnya.
 
-**Evidence:**
-- ![Hardening](assets/03-20Hardening.png)
-- ![System Hardening](assets/07-System20Hardening.png)
+Evidence:
+- ![Hardening](<assets/03- Hardening.png>)
+- ![System Hardening](<assets/07-System Hardening.png>)
 
 ### 3) Konfigurasi IP Setiap Host
 
 - Menetapkan alamat IP statis pada setiap VM sesuai IP plan.
 - Menyesuaikan konfigurasi attacker, target server, dan Security Onion pada subnet yang sama.
 
-**Evidence:**
-- ![IP Attacker](assets/04-Konfigurasi 20IP 20Attacker.png)
-- ![IP Security Onion](assets/05-Konfigurasi 20IP 20Onion.png)
-- ![IP Target Server](assets/06-Konfigurasi 20IP 20Target2 0Server.png)
+Evidence:
+- ![IP Attacker](<assets/04-Konfigurasi IP Attacker.png>)
+- ![IP Security Onion](<assets/05-Konfigurasi IP Onion.png>)
+- ![IP Target Server](<assets/06-Konfigurasi IP Target Server.png>)
 
 ### 4) Validasi Konektivitas dan Logging
 
 - Melakukan pengujian ping antar VM untuk memastikan komunikasi jaringan berjalan baik.
 - Melakukan logging verification di Security Onion untuk memastikan aktivitas terekam.
 
-**Evidence:**
-- ![Ping Antar VM](assets/09-Ping 20antar 20VM.png)
-- ![Logging Verification](assets/08-Logging 20Verification.png)
+Evidence:
+- ![Ping Antar VM](<assets/09-Ping antar VM.png>)
+- ![Logging Verification](<assets/08-Logging Verification.png>)
 
 ## Hasil Baseline
 
@@ -87,7 +87,9 @@ Phase 1 bertujuan membangun baseline lingkungan lab yang stabil dan aman sebelum
 
 Phase 1 telah menghasilkan baseline jaringan dan keamanan yang siap digunakan untuk:
 
-1. **Phase 2 (Vulnerability Assessment)** untuk identifikasi celah.
-2. **Phase 3 (Incident Response)** untuk simulasi dan analisis insiden brute force SSH.
+1. Phase 2 (Vulnerability Assessment) untuk identifikasi celah.
+2. Phase 3 (Incident Response) untuk simulasi dan analisis insiden brute force SSH.
+
+Dengan baseline ini, aktivitas di fase lanjutan dapat dilakukan secara terukur, terdokumentasi, dan dapat divalidasi melalui data monitoring.
 
 
