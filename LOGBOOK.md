@@ -9,12 +9,12 @@
 ## Log Aktivitas Mingguan
 ### Minggu 1-3: Fase Setup
 - **Target:** Instalasi CyberOps VM & Security Onion.
-- **Update [Tanggal]:** - Berhasil instalasi VM di Laptop [Nama].
- - Kendala: RAM tidak cukup, solusi: alokasi RAM diperkecil ke 4GB.
- - Artefak: [Link screenshot topologi]
+- **Update [03 Februari 2026]:** - Berhasil instalasi VM di Laptop [Kinanti Ananda Putri dan PC LAB CA].
+ - Kendala: version tools di onion terlalu lama sehingga tidak dapat digunakan.
 ### Minggu 4-7: Fase Hardening & Baseline
-- **Target:** Penguatan OS & Dokumentasi kondisi normal.
-- **Update [Tanggal]:**
+- **Target:** Konfigurasi IP, Konfigurasi Firewall dan SSH, test ping dan logging verification.
+- **Update [10-19 Maret 2026]:**
  - Melakukan konfigurasi Firewall di Windows VM.
- - Menjalankan Wireshark untuk merekam traffic normal (baseline).
+ - Konfigurasi IP dan test Ping di setiap VM.
+ - Melakukan Logging Verification dengan memeriksa log di Security Onion untuk memastikan semua aktivitas terekam dengan baik.
  - Status: **Fase 1 Selesai.**
