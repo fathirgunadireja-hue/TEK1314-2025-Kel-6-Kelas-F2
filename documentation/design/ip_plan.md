@@ -1,42 +1,22 @@
-﻿# IP Address Planning
+﻿# IP Plan & Adapter Mapping
 
-## Network Configuration
+Networks:
+- Attacker LAN: 172.16.6.0/24
+- Target LAN: 192.168.6.0/24
 
-- Network Type: Host-Only Adapter
-- Subnet: 192.168.26.0/24
-- Subnet Mask: 255.255.255.0
-- Environment: Isolated Cybersecurity Lab
+Hosts & IPs:
+- Attacker (Ubuntu Workstation)
+  - Adapter (internal at): 172.16.6.10/24
+- Router (Mikrotik)
+  - Adapter 1 (internal at): 172.16.6.1/24
+  - Adapter 2 (internal on): 192.168.6.1/24
+- Target Server (Ubuntu Server)
+  - Adapter (internal ta): 192.168.6.10/24
+- Monitoring Server (Security Onion)
+  - Adapter 1 (internal on): 172.16.6.30/24
+  - Adapter 2 (internal ta): 192.168.6.30/24
+  - Adapter 3 (monitoring): NAT (for internet access / updates)
+  - Bridge: br0 connects adapter1 + adapter2 for packet monitoring
 
-## IP Address Table
 
-| Hostname | IP Address | OS |
-|----------|------------|-----|
-| Ubuntu Cybersecurity Workstation (Attacker) | 192.168.26.10 | Ubuntu |
-| Ubuntu Server (Target) | 192.168.26.20 | Ubuntu Server |
-| Security Onion (Monitoring/SIEM) | 192.168.26.30 | Security Onion |
-
-## System Details
-
-### Attacker Machine
-- VM Name: Ubuntu Cybersecurity Workstation
-- IP Address: 192.168.26.10
-- Tools: Hydra
-- Target Port: 22 (SSH)
-- Attack Type: Brute Force & Dictionary Attack
-
-### Target Server
-- VM Name: Ubuntu Server
-- IP Address: 192.168.26.20
-- Service: OpenSSH Server
-- Port: 22
-
-### Monitoring Server (SIEM)
-- VM Name: Security Onion
-- IP Address: 192.168.26.30
-- Management Ports: 22 (SSH), 443 (HTTPS)
-- Monitoring Mode: Passive Network Capture
-- Function: 
-  - Network Traffic Analysis
-  - Brute Force Detection
-  - Alert Generation
 
