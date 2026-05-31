@@ -41,7 +41,7 @@ Lab ini menggunakan arsitektur empat komponen utama dengan konfigurasi sebagai b
 
 #### 2. Router (Mikrotik)
 - VM Name: Router Mikrotik
-- IP Address: 172.16.6.1 (Attacker LAN) dan 192.168.6.1 (Target LAN)
+- IP Address: 172.16.6.1 dan 192.168.6.1 
 - Function: Gateway sekaligus pemisah segmen jaringan
 
 #### 3. Target Server
@@ -54,7 +54,7 @@ Lab ini menggunakan arsitektur empat komponen utama dengan konfigurasi sebagai b
 - VM Name: Security Onion
 - IP Address: 172.16.6.30 dan 192.168.6.30
 - Adapters: dual-homed atau bridge agar dapat memonitor lalu lintas antar-segmen
-- Management Ports: 22 (SSH), 443 (HTTPS Web Interface)
+- Management Ports: 22 (SSH)
 - Monitoring Mode: Passive Network Capture
 - Function:
   - Network Traffic Analysis
